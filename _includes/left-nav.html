@@ -1,0 +1,18 @@
+<ul class="nav navbar-nav side-nav">
+{% for node in site.pages | sort: "path" %}
+ {% assign url_parts = node.url | split: '/' %}
+ {% assign url_parts_size = url_parts | size %} 
+ {% if node.name contains "index" and url_parts_size > 2 %} 
+ {% assign section_part = url_parts[2] %} 
+    <li class="{% if page.url contains node.url %}active{% endif %}"><span class="nav-header"><span><a href="{{node.url}}">{{node.title}}</a></span></span>
+    <ul class="nav {% if page.url contains section_part %}active{% endif %}">      
+      {% for node in site.pages | sort: "path" %}
+        {% if node.url contains section_part %}
+            <li class="{% if page.url == node.url %}active{% endif %}"><a href="{{node.url}}">{{node.title}}</a></li>  
+        {% endif %}  
+      {% endfor %}
+    </ul>
+  </li> 
+ {% endif %}  
+{% endfor %}
+</ul> 
