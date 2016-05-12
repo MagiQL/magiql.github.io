@@ -1,7 +1,7 @@
 ---
 title: Column Definitions 
 layout: default
-permalink: docs/concepts/column-definitions/
+permalink: docs/components/column-definitions/
 ---
 
 Column Definitions
