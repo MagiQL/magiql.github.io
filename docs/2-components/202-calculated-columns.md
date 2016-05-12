@@ -1,7 +1,7 @@
 ---
 title: Calculated Columns
 layout: default
-permalink: docs/concepts/calculated-columns/
+permalink: docs/components/calculated-columns/
 ---
 
 Calculated Columns
