@@ -35,6 +35,6 @@ Defines how each KnownTable is related to inform the system how to handle joins 
 
 | Value | Description |
 | --- | --- |
-| OneToOne | The left table has one row relating to the right table |
-| OneToMany | The right table has many rows relating to the left table |
-| ManyToOne | The left table has many rows relating to the right table |
+| OneToOne | One row in the left table can only link to a single row in the right table |
+| OneToMany | One row in the left table can link to multiple rows in the right table  |
+| ManyToOne | One row in the right table can link to multiple rows in the left table |
