@@ -51,6 +51,17 @@ Search-->Client: SearchResponse
 * Render Filters 
 
 ### Extensibility
+MagiQL has been built with extensibility in mind. 
+
+At the core of MagiQL is are the QueryBuilder classes, each of which can be replaced or have individual methods overridden, giving developers full control over the SQL generated. This means that the generated SQL can be further optimised by adding in additional clauses where possible. It also enables adding additional support for specialsed table relationships or data structures.
+
+Additional Render Filters can be configured to provide customised transformations of data returned by the service. 
+
+It is also possible to generate alternative data adaptors to query alternative databases / data sources.
 
 ### Performance
-TODO:   talk about how the performance depends on what is selected, optimised as much as possible. DB indexes obviously affect it. Link to Best practices on performance
+MagiQL has been designed to perform with minimal overhead in generating queries and parsing results. It takes a matter of a few milliseconds to generate SQL in most scenarios. However, it should be noted that the majority of the work is handled by the database and as a result, performance will be impacted by the amount of data being queried and the optimisation of schemas at the database level. 
+
+MagiQL will provide timing information to help you understand how much time was spent generating queries, executing on the database and parsing the results.
+
+
