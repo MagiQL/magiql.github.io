@@ -7,7 +7,17 @@ permalink: docs/introduction/getting-started/
 Getting Started
 ===
 
-[TOC]
+1. [Installation](#instalation)
+    - Installing as a WebAPI Service
+    - Installing the DataExplorer UI
+    - Installing Natively
+2. [Data Adaptor Configuration](#data-adptor-configuration)
+    - Implementing a DataAdapter
+    - JSON Based Configuration
+3. [Column Setup](#column-setup)
+    - Column Manager UI
+    - Manual Column Insertion
+    - SQL Import Scripts
 
 ## Installation
 
@@ -45,7 +55,15 @@ TODO
  
 ## Data Adaptor Configuration
 
-###
+### Implementing a DataAdapter
+
+### JSON Based Configuration
 
 ## Column Setup
-/ Import Scripts
+
+### Column Manager UI
+
+### Manual Column Insertion
+
+### SQL Import Scripts
+
