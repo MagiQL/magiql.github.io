@@ -7,12 +7,11 @@ permalink: docs/introduction/getting-started/
 Getting Started
 ===
 
-1. Installation
-2. DataAdaptor
-3. Column Creation / Import Scripts
+[TOC]
 
+## Installation
 
-### Creating a WebAPI Service
+### Installing as a WebAPI Service
 
 ```
 PM> Install-Package MagiQL.Service.WebAPI.Routes
@@ -34,3 +33,19 @@ protected void Application_Start()
     }
 }
 ```
+
+### Installing the DataExplorer UI
+* The WebApi service must be installed as a pre-requisite.
+
+TODO
+
+### Installing Natively
+
+TODO 
+ 
+## Data Adaptor Configuration
+
+###
+
+## Column Setup
+/ Import Scripts
