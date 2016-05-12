@@ -7,7 +7,7 @@ permalink: docs/introduction/uses/
 Ways To Use MagiQL
 =======
 
-MagiQL has been designed to be flexible and support as many use cases as possible. 
+MagiQL has been designed to be flexible and support as many use cases as possible. The recommended configuration is to install MagiQL as a web service, however it can be installed inside your .net application. Alternatively, you may only need to run adhoc queries for back-office purposes, in which case the DataExplorer provides an off the shelf solution.
 
 ### As A Service (recommended)
 The recommended way to use MagiQL is to install it as a WebApi service. The WebAPI service exposes a set of RESTful API endpoints which allow you to execute queries and retrieve data. All the functionality of MagiQL is exposed over the API, this includes querying, column management, generating SQL and reading configuration. 
