@@ -26,8 +26,8 @@ Defines how each KnownTable is related to inform the system how to handle joins 
 | --- | --- |
 | LeftTable | The left KnownTable |
 | RightTable | The right KnownTable |
-| LeftTableColumn | The join db column for the left table |
-| RightTableColumn | The join db column for the right table |
+| LeftTableColumn | The join db column for the left table (foreign key) |
+| RightTableColumn | The join db column for the right table (foreign key) |
 | RelationshipType | The type of relationship between the 2 tables |
 | IsDirect| Whether the relationship is a primary link between the 2 tables which should be used for joins. |
  
