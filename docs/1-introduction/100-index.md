@@ -57,7 +57,7 @@ At the core of MagiQL is are the QueryBuilder classes, each of which can be repl
 
 Additional Render Filters can be configured to provide customised transformations of data returned by the service. 
 
-It is also possible to generate alternative data adaptors to query alternative databases / data sources.
+It is also possible to build custom data adaptors to query alternative databases / data sources.
 
 ### Performance
 MagiQL has been designed to perform with minimal overhead in generating queries and parsing results. It takes a matter of a few milliseconds to generate SQL in most scenarios. However, it should be noted that the majority of the work is handled by the database and as a result, performance will be impacted by the amount of data being queried and the optimisation of schemas at the database level. 
