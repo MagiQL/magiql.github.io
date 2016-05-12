@@ -1,7 +1,7 @@
 ---
 title:  TableMappings
 layout: default
-permalink: docs/concepts/table-mappings/
+permalink: docs/components/table-mappings/
 ---
 
 TableMappings
