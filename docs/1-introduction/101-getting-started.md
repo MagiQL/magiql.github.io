@@ -7,17 +7,17 @@ permalink: docs/introduction/getting-started/
 Getting Started
 ===
 
-1. [Installation](#instalation)
-    - Installing as a WebAPI Service
-    - Installing the DataExplorer UI
-    - Installing Natively
-2. [Data Adaptor Configuration](#data-adptor-configuration)
-    - Implementing a DataAdapter
-    - JSON Based Configuration
+1. [Installation](#installation)
+    - [Installing as a WebAPI Service](#installing-as-a-webapi-service)
+    - [Installing the DataExplorer UI](#installing-the-dataexplorer-ui)
+    - [Installing Natively](#installing-natively)
+2. [Data Adaptor Configuration](#data-adaptor-configuration)
+    - [Implementing a DataAdapter](#implementing-a-dataadapter)
+    - [JSON Based Configuration](#json-based-configuration)
 3. [Column Setup](#column-setup)
-    - Column Manager UI
-    - Manual Column Insertion
-    - SQL Import Scripts
+    - [Column Manager UI](#column-manager-ui)
+    - [Manual Column Insertion](#manual-column-insertion)
+    - [SQL Import Scripts](#sql-import-scripts)
 
 ## Installation
 
