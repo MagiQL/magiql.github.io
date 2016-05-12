@@ -34,7 +34,7 @@ The number of columns requested will affect the performance of the query. It is 
 `DebugMode` should be set to false in the query by default. It will only have a minimal impact on performance, however will return the SQL generated which results in a larger response size and potential security issues.
 
 #### Adaptor / Translation Layer
-If the results returned from the API are exposed directly to the browser, it may be considered best practice to use a translation / adapter layer to convert from the MagiQL model to your own custom model. This will also allow you to remove information such as debug information from any public response.
+If the results returned from the API are exposed directly to the browser, it may be considered best practice to use a translation / adapter layer to convert from the MagiQL model to your own custom model. This will also allow you to remove information such as debug information from any public response as well as control access to private  data.
 
 
 ## Database
