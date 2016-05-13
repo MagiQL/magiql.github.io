@@ -29,6 +29,7 @@ PM> Install-Package MagiQL.Service.WebAPI.StructureMap
 ```
 
 Edit Global.asax.cs
+
 ```c#
 // enable if you want log4net
 // private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
@@ -64,6 +65,7 @@ protected void Application_Start()
 ```
 
 Create MagiQlDataSourcesRegistry.cs in the root
+
 ```c#
 using System;
 using BrighterOption.Reports.Framework.Interfaces;
