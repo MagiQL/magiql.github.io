@@ -25,24 +25,77 @@ Getting Started
 
 ```
 PM> Install-Package MagiQL.Service.WebAPI.Routes
+PM> Install-Package MagiQL.Service.WebAPI.StructureMap
 ```
 
+Edit Global.asax.cs
 ```c#
+// enable if you want log4net
+// private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+            
 protected void Application_Start()
 { 
     try
     {
-        GlobalConfiguration.Configuration.UseMagiQLApi(); // registers routes and configures serialization 
-        
-        // todo : add customisations
+        // enable if you want log4net
+        //log4net.Config.XmlConfigurator.Configure();  
+
+        // use the MagiQL API Controllers
+        GlobalConfiguration.Configuration.UseMagiQLApi();
+
+        //CustomisationsRegistration.RegisterAllCustomisations();
     }
     catch (Exception e)
     {
-       // log here
-       System.Diagnostics.Debug.WriteLine(e);
+        try
+        {
+            // enable if you want log4net
+            //Log.Error(e);
+            System.Diagnostics.Debug.WriteLine(e);
+        }
+        catch
+        {
+            // We're stuffed. 
+        }
+
+        throw;
     }
 }
 ```
+
+Create MagiQlDataSourcesRegistry.cs in the root
+```c#
+using System;
+using BrighterOption.Reports.Framework.Interfaces;
+using BrighterOption.Reports.Framework.Interfaces.Logging;
+using MagiQL.Service.WebAPI.StructureMap;
+using MagiQL.Service.WebAPI.StructureMap.IoC; 
+
+namespace BrighterOption.Reports.Service.Web
+{
+    public class MagiQlDataSourcesRegistry : MagiQlDataSourcesRegistryBase
+    { 
+        public MagiQlDataSourcesRegistry()
+        { 
+            // used for injecting controllers
+            Scan(Registration.UseDefaultConventions<MagiQlDataSourcesRegistry>);
+            For<ILoggingProvider>().Use<NullLoggingProvider>();
+            
+            // register all datasource implementations
+            //For<IReportsDataSource>().Use<MyDataSource>(); 
+        }
+
+        public override void LogError(Exception ex)
+        {
+            // enable log4net (or any other logger)
+            //ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+            //Log.Error(ex);
+        }
+    }
+}
+```
+
+
 
 ### Installing the DataExplorer UI
 * The WebApi service must be installed as a pre-requisite.
