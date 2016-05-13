@@ -99,7 +99,7 @@ namespace BrighterOption.Reports.Service.Web
 }
 ```
 
-Edit Web.config and replace text  in []
+Edit Web.config and replace the text  in [ ]
 
 ```xml
  <connectionStrings>
