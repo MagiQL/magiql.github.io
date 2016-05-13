@@ -23,6 +23,8 @@ Getting Started
 
 ### Installing as a WebAPI Service
 
+Create an empty WebAPI project and install packages
+
 ```
 PM> Install-Package MagiQL.Service.WebAPI.Routes
 PM> Install-Package MagiQL.Service.WebAPI.StructureMap
