@@ -89,6 +89,11 @@ namespace BrighterOption.Reports.Service.Web
             For<IReportsDataSource>().Use<MyDataSource>(); // where MyDataSouce is your implemented DataSource
         }
 
+        public override HttpConfiguration HttpConfiguration
+        {
+            get { return GlobalConfiguration.Configuration; }
+        }
+
         public override void LogError(Exception ex)
         {
             // enable log4net (or any other logger)
