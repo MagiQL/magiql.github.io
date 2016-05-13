@@ -99,11 +99,11 @@ namespace BrighterOption.Reports.Service.Web
 }
 ```
 
-Edit Web.config
+Edit Web.config and replace text  in []
 
 ```xml
  <connectionStrings>
-    <add name="MagiQL" connectionString="Data Source=(localdb)\MagiQL-Tests;Initial Catalog=MagiQL;Integrated Security=True" providerName="System.Data.SqlClient" />
+    <add name="MagiQL" connectionString="Data Source=[db-server];Initial Catalog=[db-name];Persist Security Info=True;User ID=[username];Password=[password]" providerName="System.Data.SqlClient" />
  </connectionStrings>
 ```
  
