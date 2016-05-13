@@ -97,6 +97,16 @@ namespace BrighterOption.Reports.Service.Web
         }
     }
 }
+
+Edit Web.config
+
+```xml
+ <connectionStrings>
+    <add name="MagiQL" connectionString="Data Source=(localdb)\MagiQL-Tests;Initial Catalog=MagiQL;Integrated Security=True" providerName="System.Data.SqlClient" />
+ </connectionStrings>
+```
+
+
 ```
 
 
