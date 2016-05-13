@@ -55,7 +55,7 @@ MagiQL has been built with extensibility in mind.
 
 At the core of MagiQL is are the QueryBuilder classes, each of which can be replaced or have individual methods overridden, giving developers full control over the SQL generated. This means that the generated SQL can be further optimised by adding in additional clauses where possible. It also enables adding additional support for specialsed table relationships or data structures.
 
-Additional Render Filters can be configured to provide customised transformations of data returned by the service. 
+Additional Render Filters can be configured to provide customised transformations of data returned by the service. Custom column validators can also be defined and alternative column providers implemented.
 
 It is also possible to build custom data adaptors to query alternative databases / data sources.
 
