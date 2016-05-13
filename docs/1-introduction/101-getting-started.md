@@ -84,7 +84,7 @@ namespace BrighterOption.Reports.Service.Web
             For<ILoggingProvider>().Use<NullLoggingProvider>();
             
             // register all datasource implementations
-            //For<IReportsDataSource>().Use<MyDataSource>(); 
+            For<IReportsDataSource>().Use<MyDataSource>(); // where MyDataSouce is your implemented DataSource
         }
 
         public override void LogError(Exception ex)
