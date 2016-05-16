@@ -69,37 +69,28 @@ protected void Application_Start()
 Create MagiQlDataSourcesRegistry.cs in the root
 
 ```c#
-using System;
-using BrighterOption.Reports.Framework.Interfaces;
-using BrighterOption.Reports.Framework.Interfaces.Logging;
-using MagiQL.Service.WebAPI.StructureMap;
-using MagiQL.Service.WebAPI.StructureMap.IoC; 
-
-namespace BrighterOption.Reports.Service.Web
-{
-    public class MagiQlDataSourcesRegistry : MagiQlDataSourcesRegistryBase
+public class MagiQlDataSourcesRegistry : MagiQlDataSourcesRegistryBase
+{ 
+    public MagiQlDataSourcesRegistry()
     { 
-        public MagiQlDataSourcesRegistry()
-        { 
-            // used for injecting controllers
-            Scan(Registration.UseDefaultConventions<MagiQlDataSourcesRegistry>);
-            For<ILoggingProvider>().Use<NullLoggingProvider>();
-            
-            // register all datasource implementations
-            For<IReportsDataSource>().Use<MyDataSource>(); // where MyDataSouce is your implemented DataSource
-        }
+        // used for injecting controllers
+        Scan(Registration.UseDefaultConventions<MagiQlDataSourcesRegistry>);
+        For<ILoggingProvider>().Use<NullLoggingProvider>();
+        
+        // register all datasource implementations
+        For<IReportsDataSource>().Use<MyDataSource>(); // where MyDataSouce is your implemented DataSource
+    }
 
-        public override HttpConfiguration HttpConfiguration
-        {
-            get { return GlobalConfiguration.Configuration; }
-        }
+    public override HttpConfiguration HttpConfiguration
+    {
+        get { return GlobalConfiguration.Configuration; }
+    }
 
-        public override void LogError(Exception ex)
-        {
-            // enable log4net (or any other logger)
-            //ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-            //Log.Error(ex);
-        }
+    public override void LogError(Exception ex)
+    {
+        // enable log4net (or any other logger)
+        //ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+        //Log.Error(ex);
     }
 }
 ```
