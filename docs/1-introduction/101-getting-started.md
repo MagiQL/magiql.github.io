@@ -33,44 +33,47 @@ PM> Install-Package MagiQL.Service.WebAPI.StructureMap
 Edit Global.asax.cs
 
 ```c#
-// enable if you want log4net
-// private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-            
-protected void Application_Start()
-{ 
-    try
-    {
-        // enable if you want log4net
-        //log4net.Config.XmlConfigurator.Configure();  
-
-        // setup structuremap and configure datasources
-        GlobalConfiguration.Configuration.ConfigureStructureMapForMagiQL<WebApiApplication,NullLoggingProvider>(
-            x =>
-            {
-                // your data source implementations
-                x.For<IReportsDataSource>().Use<MyDataSource1>();
-                x.For<IReportsDataSource>().Use<MyDataSource2>(); 
-            });
-                    
-        // use the MagiQL API Controllers
-        GlobalConfiguration.Configuration.UseMagiQLApi();
-
-        //CustomisationsRegistration.RegisterAllCustomisations();
-    }
-    catch (Exception e)
-    {
+public class WebApiApplication : System.Web.HttpApplication
+{
+    // enable if you want log4net
+    // private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+                
+    protected void Application_Start()
+    { 
         try
         {
             // enable if you want log4net
-            //Log.Error(e);
-            System.Diagnostics.Debug.WriteLine(e);
+            //log4net.Config.XmlConfigurator.Configure();  
+    
+            // setup structuremap and configure datasources
+            GlobalConfiguration.Configuration.ConfigureStructureMapForMagiQL<WebApiApplication,NullLoggingProvider>(
+                x =>
+                {
+                    // your data source implementations
+                    x.For<IReportsDataSource>().Use<MyDataSource1>();
+                    x.For<IReportsDataSource>().Use<MyDataSource2>(); 
+                });
+                        
+            // use the MagiQL API Controllers
+            GlobalConfiguration.Configuration.UseMagiQLApi();
+    
+            //CustomisationsRegistration.RegisterAllCustomisations();
         }
-        catch
+        catch (Exception e)
         {
-            // We're stuffed. 
+            try
+            {
+                // enable if you want log4net
+                //Log.Error(e);
+                System.Diagnostics.Debug.WriteLine(e);
+            }
+            catch
+            {
+                // We're stuffed. 
+            }
+    
+            throw;
         }
-
-        throw;
     }
 }
 ```
