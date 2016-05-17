@@ -43,6 +43,15 @@ protected void Application_Start()
         // enable if you want log4net
         //log4net.Config.XmlConfigurator.Configure();  
 
+        // setup structuremap and configure datasources
+        GlobalConfiguration.Configuration.ConfigureStructureMapForMagiQL<WebApiApplication,NullLoggingProvider>(
+            x =>
+            {
+                // your data source implementations
+                x.For<IReportsDataSource>().Use<MyDataSource1>();
+                x.For<IReportsDataSource>().Use<MyDataSource2>(); 
+            });
+                    
         // use the MagiQL API Controllers
         GlobalConfiguration.Configuration.UseMagiQLApi();
 
@@ -65,36 +74,7 @@ protected void Application_Start()
     }
 }
 ```
-
-Create MagiQlDataSourcesRegistry.cs in the root
-
-```c#
-public class MagiQlDataSourcesRegistry : MagiQlDataSourcesRegistryBase
-{ 
-    public MagiQlDataSourcesRegistry()
-    { 
-        // used for injecting controllers
-        Scan(Registration.UseDefaultConventions<MagiQlDataSourcesRegistry>);
-        For<ILoggingProvider>().Use<NullLoggingProvider>();
-        
-        // register all datasource implementations
-        For<IReportsDataSource>().Use<MyDataSource>(); // where MyDataSouce is your implemented DataSource
-    }
-
-    public override HttpConfiguration HttpConfiguration
-    {
-        get { return GlobalConfiguration.Configuration; }
-    }
-
-    public override void LogError(Exception ex)
-    {
-        // enable log4net (or any other logger)
-        //ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-        //Log.Error(ex);
-    }
-}
-```
-
+  
 Edit Web.config and replace the text  in [ ]
 
 ```xml
