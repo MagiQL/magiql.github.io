@@ -67,7 +67,7 @@ QUERYING
 **_DATETO_** `2016-02-03`  
 **_TEMPORALAGGREGATION_** `Total`  
 **_FILTER_** `Column4` *> 5*  
-**_FILTER_** `Column5` *= (6,7,8)*  **_EXCLUDE_**  
+**_FILTER_** `Column5` *= ('A','D','Y')*  **_EXCLUDE_**  
 **_SUMMARIZEBY_** `Column6`  
 **ORDERBY** `Column7` **_DESC_**  
 **PAGESIZE** *20* **PAGEINDEX** *0* **_GETCOUNT_** **_WITHSTATS_** **_DEBUGMODE_**
