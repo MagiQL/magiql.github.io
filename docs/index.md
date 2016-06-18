@@ -25,7 +25,7 @@ Features
  * [Data Explorer](/docs/ui/data-explorer/) UI to quickly build and execute queries
  * [Spreadsheet Exporter](/docs/components/spreadsheet-exporter/)
  * [Column Manager](/docs/ui/column-manager/) UI to easily manage columns and formulas
- * Clean, [Automatically Generated SQL](/docs/introduction/lifecycle/) with extensible [Query Builders](/docs/extensibility/query-builders/)
+ * Clean, [Automatically Generated SQL](/docs/introduction/lifecycle/) with extensible [Query Builders](/docs/extensibility/sql-query/)
  * [Intelligent Table Joining](/docs/introduction/lifecycle/) based on [Relationships](/docs/components/table-mappings/)
  * Multiple [Data Adapters](/docs/introduction/getting-started/#data-adaptor-configuration) and [Cross-Database Query](/docs/components/table-mappings/) support
 
