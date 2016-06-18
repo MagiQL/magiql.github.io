@@ -1,9 +1,9 @@
 ---
 title: Column Metadata
 layout: default
-permalink: docs/components/column-extra/
+permalink: docs/components/column-metadata/
 ---
 
 Column Metadata
 ===
- ff
+ 
