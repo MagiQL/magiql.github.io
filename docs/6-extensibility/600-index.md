@@ -1,10 +1,10 @@
 ---
-title: User Interface
+title: Extensibility
 layout: default
-permalink: docs/ui/
+permalink: docs/extensibility/
 ---
 
-User Interface
+Extensibility
 ===================
 
  
