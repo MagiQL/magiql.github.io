@@ -63,11 +63,11 @@ QUERYING
 >
 **SELECT** `Column1`, `Column2`  
 **GROUPBY** `Column3`  
-**DATEFROM** `2016-01-01`  
-**DATETO** `2016-02-03`  
-**TEMPORALAGGREGATION** `Total`  
-**FILTER** `Column4` *> 5*  
-**FILTER** `Column5` *= (6,7,8)*  **EXCLUDE**
-**SUMMARIZEBY** `Column6`  
-**ORDERBY** `Column7` **DESC**  
-**PAGESIZE** *20* **PAGEINDEX** *0* **GETCOUNT** **EXCLUDERECORDSWITHNOSTATS** **DEBUGMODE**
+**_DATEFROM_** `2016-01-01`  
+**_DATETO_** `2016-02-03`  
+**_TEMPORALAGGREGATION_** `Total`  
+**_FILTER_** `Column4` *> 5*  
+**_FILTER_** `Column5` *= (6,7,8)*  **_EXCLUDE_**  
+**_SUMMARIZEBY_** `Column6`  
+**ORDERBY** `Column7` **_DESC_**  
+**PAGESIZE** *20* **PAGEINDEX** *0* **_GETCOUNT_** **_EXCLUDERECORDSWITHNOSTATS_** **_DEBUGMODE_**
