@@ -49,10 +49,8 @@ When using statistical data which is available with time based resolutions, allo
 When using statistical data which is available with time based resolutions, allows statistical data to be filtered based on a timestamp prior to filtering. 
 
 ### Text Filter
-'TextFilter' is used to perform a free text search to filter records matching the text.
-'TextFilterColumns' is used to specify one or more columns to search on. If not specified, will search the default configured column.
-
-
+`TextFilter` is used to perform a free text search to filter records matching the text.  
+`TextFilterColumns` is used to specify one or more columns to search on. If not specified, will search the default configured column.
 
 ### Pagination
 `PageSize` is used to control the number of results returned
