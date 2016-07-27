@@ -11,3 +11,13 @@ Column Definitions
 * Get Column Mappaings
 * Create Column Mapping
 * Update Column Mapping
+
+
+
+### Get Selectable Columns
+
+### Get Column Mappaings
+
+### Create Column Mapping
+
+### Update Column Mapping
