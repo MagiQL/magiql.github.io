@@ -7,13 +7,6 @@ permalink: docs/api/columns/
 Column Definitions
 ====
 
-* Get Selectable Columns
-* Get Column Mappaings
-* Create Column Mapping
-* Update Column Mapping
-
-
-
 ### Get Selectable Columns
 
 ### Get Column Mappaings
