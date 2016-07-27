@@ -16,7 +16,7 @@ Render filters offer a way to modify the data that was selected from the databas
 |`PrecisionRenderFilter`| Rounds decimals to the specified number of decimal places | Precision | [int] number of decimal places |
 |`BooleanDataFormatRenderFilter`| Parses strings or bit fields into a true / false string | DataFormat | "Boolean" (applies automatically to Boolean db columns) | 
 |`CurrencyDataFormatRenderFilter`| Rounds decimals to 2 decimal places | DataFormat | "Currency" | 
-|`UtcDateTimeDataFormatRenderFilter`| Parses and formats date time strings into te following format : "dd/MM/yyyy HH:mm:ss"  | UtcDateTime | n/a |
+|`UtcDateTimeDataFormatRenderFilter`| Parses and formats date time strings into the following format : "dd/MM/yyyy HH:mm:ss"  | UtcDateTime | n/a |
 
 
 ### Custom Render Filters
