@@ -53,7 +53,7 @@ When using statistical data which is available with time based resolutions, allo
 `TextFilterColumns` is used to specify one or more columns to search on. If not specified, will search the default configured column.
 
 ### Pagination
-`PageSize` is used to control the number of results returned
+`PageSize` is used to control the number of results returned  
 `PageIndex` is a 0 based index to define which page of data to return.
 
 ### DebugMode
