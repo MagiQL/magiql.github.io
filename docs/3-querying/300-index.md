@@ -69,8 +69,8 @@ QUERYING
 **_DATEFROM_** `2016-01-01`  
 **_DATETO_** `2016-02-03`  
 **_TEMPORALAGGREGATION_** `Total`  
-**_TEXTFILTER_** 'Find me'   **IN(`Column5`,`Column6`) **
-**_FILTER_** `Column7` *> 5*  
+**_TEXTFILTER_** 'Find me'   **IN(`Column5`,`Column6`)**   
+**_FILTER_** `Column7` *> 5*    
 **_FILTER_** `Column8` *= ('A','D','Y')*  **_EXCLUDE_**  
 **_SUMMARIZEBY_** `Column2`  
 **ORDERBY** `Column1` **_DESC_**  
