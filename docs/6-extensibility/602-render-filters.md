@@ -23,7 +23,7 @@ Render filters offer a way to modify the data that was selected from the databas
 
 Additional render filters can be defined by either inheriting `MetaDataRenderFilter` or `DateFormatMetaDataRenderFilter` in order to create a render filter based on MetaData values, or by implementing `IRenderFilter`.
 
-```
+```c#
 public class ToLowerDataFormatRenderFilter : DataFormatMetaDataRenderFilter
 {
     protected override string DataFormatValue
@@ -40,7 +40,7 @@ public class ToLowerDataFormatRenderFilter : DataFormatMetaDataRenderFilter
 
 Once a custom render filter has been defined, it must be registered with the `RenderFilterFactory` using the `Register()` method. Unwanted render filters can be removed using `UnRegister()`
 
-```
+```c#
 var renderFilterFactory = new MagiQL.Framework.Renderers.RenderFilterFactory();
 renderFilterFactory.Register<ToLowerDataFormatRenderFilter>();
 ```
