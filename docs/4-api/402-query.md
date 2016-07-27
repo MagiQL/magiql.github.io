@@ -8,7 +8,7 @@ Query
 ====
 
 ### Select Data
-```GET /v1/{platform}/query```   
+```POST /v1/{platform}/query```   
 
 Selects data according to the search request
 
@@ -24,7 +24,7 @@ Search Request object. See [Querying](/docs/querying/) for structure
 | userid | (optional) must be specified if columns selected which belong to a user |  
 
 ### Generate SQL
-```GET /v1/{platform}/sql```   
+```POST /v1/{platform}/sql```   
 
 Generates the sql script but does not select any data
 
