@@ -7,7 +7,7 @@ permalink: docs/api/query/
 Query
 ====
 
-### Select Query
+### Select Data
 ```GET /v1/{platform}/query```   
 
 Selects data according to the search request
