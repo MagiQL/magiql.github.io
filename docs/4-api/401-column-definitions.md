@@ -16,7 +16,7 @@ Returns a list of columns which are selectable along with category information a
 
 |Parameter| Description|
 |-------- | ---|
-| organizationud | (optional) includes columns belonging to the specified organization id |
+| organizationid | (optional) includes columns belonging to the specified organization id |
 | userid | (optional) includes columns belonging to the specified user id | 
 | groupby | (optional) restricts the columns to ones which support grouping by the specified column id | 
 
@@ -32,7 +32,7 @@ Returns a list of all columns and all of their properies and metadata
 | organizationid | (required) includes columns belonging to the specified organization id |
 | userid | (optional) includes columns belonging to the specified user id | 
 | columnid | (optional) returns the data for only the specified column | 
-| clearCache | (optional) when true, will clear the cached columns | 
+| clearCache | (optional) when 'true', will clear the cached columns | 
 
 
 ### Create Column Mapping
