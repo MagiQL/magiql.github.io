@@ -10,7 +10,7 @@ Column Definitions
 ### Get Selectable Columns
 ```GET /v1/{platform}/columns```   
 
-Returns a list of columns which are selectable along with category information and additional metadata
+Returns a list of columns which are selectable along with category information and additional metadata  
 
 **Querystring Parameters**
 
@@ -23,7 +23,7 @@ Returns a list of columns which are selectable along with category information a
 ### Get Column Mappings
 ```GET /v1/{platform}/columnmappings```
 
-Returns a list of all columns and all of their properies and metadata
+Returns a list of all columns and all of their properies and metadata  
 
 **Querystring Parameters**  
 
@@ -41,7 +41,7 @@ Returns a list of all columns and all of their properies and metadata
 Creates a new column mapping  
 
 **Body Parameter**  
-The column object to create (see [Create Column Mapping](#create-column-mapping) for structure)
+The column object to create (see [Create Column Mapping](#create-column-mapping) for structure)  
 
 ### Update Column Mapping
 ```PUT /v1/{platform}/columnmappings/{columnid}```
@@ -50,3 +50,16 @@ Updates an existing column mapping
 
 **Body Parameter**  
 The column object to update (see [Create Column Mapping](#create-column-mapping) for structure)
+
+### Dependant Column Mappings
+
+Returns all columns that are used to calculate the specified fieldname or column  
+
+```GET /v1/{platform}/dependantcolumnmappings```   
+
+**Querystring Parameters**  
+
+|Parameter| Description|
+|-------- | ---|
+| columnid | (optional) the id of the pre defined column |
+| fieldname | (optional) a calculated column formula which references other columns |  
