@@ -41,7 +41,7 @@ Returns a list of all columns and all of their properies and metadata
 Creates a new column mapping  
 
 **Body Parameter**  
-The column object to create (see [Create Column Mapping](#create-column-mapping) for structure)  
+The column object to create (see [Get Column Mappings](#get-column-mapping) for structure)  
 
 ### Update Column Mapping
 ```PUT /v1/{platform}/columnmappings/{columnid}```
@@ -49,7 +49,7 @@ The column object to create (see [Create Column Mapping](#create-column-mapping)
 Updates an existing column mapping  
 
 **Body Parameter**  
-The column object to update (see [Create Column Mapping](#create-column-mapping) for structure)
+The column object to update (see [Get Column Mappings](#get-column-mapping) for structure)
 
 ### Dependant Column Mappings
 
