@@ -13,6 +13,6 @@ Configuration
 Returns a list of all configured platforms / data sources
 
 ### Get Table Info
-```GET /v1/{platrofm}/tableinfo```
+```GET /v1/{platform}/tableinfo```
 
 Returns a list of configured tables and their relationships
