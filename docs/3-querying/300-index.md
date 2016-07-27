@@ -26,7 +26,10 @@ QUERYING
   "dateEnd": null,
   "dateRangeType": 0,
   "temporalAggregation": "Total",
-  "query": "",
+  "TextFilter": "find me",
+  "TextFilterColumns"  {
+    "columnId": 1010
+  },
   "filters": [
     {
       "columnId": 1517,
@@ -61,13 +64,14 @@ QUERYING
 
 #### Proposed QL Syntax
 >
-**SELECT** `Column1`, `Column2`  
+**SELECT** `Column1`, `Column2` , `Column3`  
 **GROUPBY** `Column3`  
 **_DATEFROM_** `2016-01-01`  
 **_DATETO_** `2016-02-03`  
 **_TEMPORALAGGREGATION_** `Total`  
-**_FILTER_** `Column4` *> 5*  
-**_FILTER_** `Column5` *= ('A','D','Y')*  **_EXCLUDE_**  
-**_SUMMARIZEBY_** `Column6`  
-**ORDERBY** `Column7` **_DESC_**  
+**_TEXTFILTER_** 'Find me'   **IN(`Column5`,`Column6`) **
+**_FILTER_** `Column7` *> 5*  
+**_FILTER_** `Column8` *= ('A','D','Y')*  **_EXCLUDE_**  
+**_SUMMARIZEBY_** `Column2`  
+**ORDERBY** `Column1` **_DESC_**  
 **PAGESIZE** *20* **PAGEINDEX** *0* **_GETCOUNT_** **_WITHSTATS_** **_DEBUGMODE_**
