@@ -44,3 +44,5 @@ public class ExampleDataSourceComponents : DataSourceComponentsBase
     }
 }
 ```
+
+You may wish to override other methods to support filters or join additional data.
