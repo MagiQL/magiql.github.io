@@ -8,10 +8,10 @@ Data Explorer
 ====
 
 ### Running a Query
-<img src="/assets/images/screen-dataexplorer-query.png" />
+<a href="/assets/images/screen-dataexplorer-query.png"><img src="/assets/images/screen-dataexplorer-query.png" width="90%" /></a>
 
 ### Viewing Generated SQL
-<img src="/assets/images/screen-dataexplorer-sql.png" />
+<a href="/assets/images/screen-dataexplorer-sql.png"><img src="/assets/images/screen-dataexplorer-sql.png" width="90%" /></a>
 
 ### Exporting to a spreadsheet
-<img src="/assets/images/screen-dataexplorer-export.png" />
+<a href="/assets/images/screen-dataexplorer-export.png"><img src="/assets/images/screen-dataexplorer-export.png" width="90%" /></a>
