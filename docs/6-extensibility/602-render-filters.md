@@ -38,7 +38,7 @@ public class ToLowerDataFormatRenderFilter : DataFormatMetaDataRenderFilter
 }
 ```
 
-Once a custom render filter has been defined, it must be registered with the `RenderFilterFactory` using the `Register()` method. Unwanted render filters can be removed using `UnRegister()`
+Once a custom render filter has been defined, it must be registered with the `RenderFilterFactory` using the `Register()` method. Unwanted render filters can be removed using `UnRegister()`. This should be done once when the application loads - probably in the `Application_Start()` method of the Global.cs
 
 ```c#
 var renderFilterFactory = new MagiQL.Framework.Renderers.RenderFilterFactory();
