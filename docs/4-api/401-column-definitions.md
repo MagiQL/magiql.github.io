@@ -20,7 +20,7 @@ Returns a list of columns which are selectable along with category information a
 | userid | (optional) includes columns belonging to the specified user id | 
 | groupby | (optional) restricts the columns to ones which support grouping by the specified column id | 
 
-### Get Column Mappaings
+### Get Column Mappings
 ```GET /v1/{platform}/columnmappings```
 
 Returns a list of all columns and all of their properies and metadata
