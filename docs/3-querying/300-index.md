@@ -27,7 +27,7 @@ QUERYING
   "dateRangeType": 0,
   "temporalAggregation": "Total",
   "TextFilter": "find me",
-  "TextFilterColumns"  {
+  "TextFilterColumns":  {
     "columnId": 1010
   },
   "filters": [
