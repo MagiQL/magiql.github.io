@@ -31,8 +31,8 @@ NOTE : While the search requests requires column IDs to be used, it is strongly 
 Client->SelectableColumns: UserID
 SelectableColumns-->Client: SelectableColumn[]
 Client->Client: User Selection
-Client->Search: SearchRequest
-Search-->Client: SearchResponse
+Client->Query: SearchRequest
+Query-->Client: SearchResponse
 ```
  
 
