@@ -16,8 +16,8 @@ Column Definitions are stored in the `ReportColumnMapping` table and additional 
 |ID| The unique identifier for the column defintion|
 |DataSourceTypeId | The ID of the data source this column for|
 |UniqueName     | A unique string identifier for this column. <br>Unique per `DataSourceTypeId`|
-|KnownTable | An alias for the table which is referred to in the TableMappings class. Does not need to match the DB table name, but may help.|
-|FieldName | For non calculated columns: the field to select from the DB table. For calculated columns: the formula.|
+|KnownTable | An alias for the table/view which is referred to in the TableMappings class. Does not need to match the DB table/view name, but may help.|
+|FieldName | For non calculated columns: the field to select from the DB table/view. For calculated columns: the formula.|
 |TransposeKey | For transpose stats the column name to pivot on.|
 |FieldAggregationMode | The aggregation method to use when aggregating the values. For more info see [FieldAggregationMode](#fieldaggregationmode)|
 |DbType | The Data Type of the column. For more info see [DbType](#dbtype)|
