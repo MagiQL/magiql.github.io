@@ -45,6 +45,7 @@ Column Definitions are stored in the `ReportColumnMapping` table and additional 
 |Name| Description|
 |-------- | ---|
 |Byte	|An 8-bit unsigned integer ranging in value from 0 to 255. |
+|Currency	| A currency value ranging from -2 63 (or -922,337,203,685,477.5808) to 2 63 -1 (or +922,337,203,685,477.5807) with an accuracy to a ten-thousandth of a currency unit.|
 |Decimal	| A simple type representing values ranging from 1.0 x 10 -28 to approximately 7.9 x 10 28 with 28-29 significant digits.|
 |Double	| A floating point type representing values ranging from approximately 5.0 x 10 -324 to 1.7 x 10 308 with a precision of 15-16 digits.|
 |Int16	|An integral type representing signed 16-bit integers with values between -32768 and 32767.|
@@ -74,7 +75,7 @@ Column Definitions are stored in the `ReportColumnMapping` table and additional 
 |DateTime	|A type representing a date and time value.|
 |DateTime2	|Date and time data. Date value range is from January 1,1 AD through December 31, 9999 AD. Time value range is 00:00:00 through 23:59:59.9999999 with an accuracy of 100 nanoseconds.|
 |DateTimeOffset	| Date and time data with time zone awareness. Date value range is from January 1,1 AD through December 31, 9999 AD. Time value range is 00:00:00 through 23:59:59.9999999 with an accuracy of 100 nanoseconds. Time zone value range is -14:00 through +14:00.|
-|Time	|A type representing a SQL Server DateTime value. If you want to use a SQL Server time value, use Time.|
+|Time	|A type representing a SQL Server DateTime value.|
 
  **Other Types** 
  
@@ -82,7 +83,6 @@ Column Definitions are stored in the `ReportColumnMapping` table and additional 
 |-------- | ---|
 |Binary	| A variable-length stream of binary data ranging between 1 and 8,000 bytes.|
 |Boolean	| A simple type representing Boolean values of true or false. |
-|Currency	| A currency value ranging from -2 63 (or -922,337,203,685,477.5808) to 2 63 -1 (or +922,337,203,685,477.5807) with an accuracy to a ten-thousandth of a currency unit.|
 |Guid	|A globally unique identifier (or GUID).|
 |Object	|A general type representing any reference or value type not explicitly represented by another DbType value. |
 |Xml	|A parsed representation of an XML document or fragment.|
