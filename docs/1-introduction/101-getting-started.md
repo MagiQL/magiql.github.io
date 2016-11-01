@@ -125,6 +125,16 @@ To verify that the data adaptor has been setup browse to '/v1/platforms' in your
 
 ### Database Setup
 
+MagiQL requires 2 tables to store column information and 1 table to store export statuses.
+
+The scripts can be found here : (https://github.com/salesforce/MagiQL/tree/master/sql)[https://github.com/salesforce/MagiQL/tree/master/sql]
+
+The tables created are
+
+* ReportColumnMapping
+* ReportColumnMappingMetaData
+* ReportStatus
+
 ### Installing the DataExplorer UI
 > The WebApi service must be installed as a pre-requisite.
    
