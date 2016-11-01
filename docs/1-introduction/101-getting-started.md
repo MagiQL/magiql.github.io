@@ -120,7 +120,7 @@ Edit your WebApi projects Global.asax.cs by uncommenting the line
 
 And replacing 'MyDataSource1' with the name of the datasource class you just created.
 
-To verify that the data adaptor has been setup browse to '/v1/platforms' in your newly created WebAPI applicatin where you should see the new DataSource listed.
+To verify that the data adaptor has been setup browse to '/v1/platforms' in your newly created WebAPI application where you should see the new DataSource listed.
 
 
 ### Database Setup
