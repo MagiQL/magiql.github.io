@@ -112,12 +112,13 @@ The files installed will be
  * MyDataSource1QueryBuilderBase.cs - defines basic query builder behaviour
  * MyDataSource1TableMappings.cs - defines the available database tables and their relationships
  
-Edit your WebApi projects Global.asax.cs by uncommenting the line 
+Edit your WebApi projects Global.asax.cs by uncommenting the line   
+
 ```
  //x.For<IReportsDataSource>().Use<MyDataSource1>();
 ```
-And replacing 'MyDataSource1' with the name of the datasource class you just created.
 
+And replacing 'MyDataSource1' with the name of the datasource class you just created.
 
 To verify that the data adaptor has been setup browse to '/v1/platforms' in your newly created WebAPI applicatin where you should see the new DataSource listed.
 
