@@ -9,6 +9,8 @@ Getting Started
 
 ## Installation
 
+There are 2 ways you can setup a MagiQL service. Either by cloning the [MagiQL repository](https://github.com/salesforce/MagiQL) and editing the code, or by installing the MagiQL nuget packages into an empty project. The instructions below will be for the latter.
+
 ### Installing as a WebAPI Service
 
 > To see an example WebAPI project, check out [this example repository](https://github.com/MagiQL/MagiQL-StarterProject/tree/master/src)
@@ -123,17 +125,32 @@ The tables created are
 * ReportColumnMappingMetaData
 * ReportStatus
 
-### Installing the DataExplorer UI
-> The WebApi service must be installed as a pre-requisite.
-   
-
 ## Column Setup
+Once your database has been set up, you can then start to insert columns into the ReportColumnMapping table. 
 
-### Column Manager UI
+For details on values to insert please refer to [Columm Definitions](/docs/components/column-definitions/)
 
-### Manual Column Insertion
+Alternatively, you can install the DataExplorer UI and define columns through the web interface.
 
 ### SQL Import Scripts
+
+It is possible to write a script that will create columns directly from the database schema using [INFORMATION_SCHEMA].[COLUMNS] data.
+
+This approach may be time saving if a lot of columns exist. An example of how this could work can be found [here](https://github.com/salesforce/MagiQL/tree/master/src/ScenarioTests/Scenarios/Scenario2-Analytics/Scenario2.Tests.Integration/SqlScripts/Columns)
+
+
+### Installing the DataExplorer UI
+> The WebApi service must be installed as a pre-requisite.
+
+The DataExplorer UI will allow you to easily build and execute queries against your MagiQL service. It will also allow you to create and edit column definitions through a UI.
+
+To install the DataExplorer, copy the code from [here](https://github.com/salesforce/MagiQL/tree/master/src/ScenarioTests/Service/MagiQL.DataExplorer.Web)
+
+And then edit the Web.Config to point to your MagiQL service instance.
+
+```
+    <add key="Services.ReportsService.BaseUrl" value="http://localhost:8088/" />
+```
 
 
 ### Installing Natively
