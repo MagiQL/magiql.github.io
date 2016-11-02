@@ -1,6 +1,7 @@
 ---
 title: Contribute
 layout: default
+permalink: contribute/
 ---
 
 Contributing to MagiQL
